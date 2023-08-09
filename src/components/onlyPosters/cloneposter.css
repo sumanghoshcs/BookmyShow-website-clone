@@ -1,0 +1,22 @@
+ .cloneposter_Container{
+    /* width: 100%; */
+    display: flex;
+    
+    margin: 1.5rem 1rem 1.5rem 1rem;
+    box-sizing: content-box;
+    justify-content: center;
+}
+
+ @media (max-width: 800px){
+    .clone{
+        padding: 0.5rem 0.5rem 0.7rem 0.5rem;
+    }
+    .cloneposter_Container{
+        width: 100%;
+        display: flex;
+        
+        margin: 0.5rem 0rem 0.5rem 0rem;
+        box-sizing: content-box;
+        justify-content: center;
+    }
+} 

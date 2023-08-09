@@ -1,0 +1,35 @@
+.movieCardM{
+    display: flex;
+    margin: 0.5rem;
+    width: auto;
+    height: auto;
+   padding: 0rem 0.7rem 0rem 0.7rem;
+   
+
+}
+
+
+.image_detail_container{
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+}
+.detailsContainer{
+    padding-top: 10px;
+}
+
+.recom_movie{
+    border-radius: 12px;
+}
+.recom_movie:hover{
+    cursor: pointer;
+}
+.detail{
+    padding: 0.3rem;
+}
+
+@media (max-width: 900px){
+    
+}

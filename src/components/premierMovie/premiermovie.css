@@ -1,0 +1,29 @@
+.Premier_Container{
+    background-color: rgba(43, 49, 72);
+    margin: 1rem 0rem 1rem 0rem;
+}
+
+.premier_details{
+    color: white;
+    display: flex;
+    overflow-x: auto;
+    /* margin: 0.5rem 0rem 0.5rem 0rem; */
+    padding: 1rem 0rem 0rem 0rem;
+    scrollbar-width: none;
+}
+
+.premier_details::-webkit-scrollbar {
+    display: none;
+  }
+
+.premier_heading{
+    padding: 1rem 0rem 0rem 2rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.button{
+    width: 7rem;
+    /* height: 15%; */
+    padding-right: 2rem;
+}

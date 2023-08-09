@@ -1,0 +1,61 @@
+/* Crouse.css */
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1750px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .carousel-button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .prev-button {
+    border-radius: 5px 0 0 5px;
+  }
+  
+  .next-button {
+    border-radius: 0 5px 5px 0;
+    /* Remove the margin to make the "Next" button visible on both sides */
+  }
+  
+  .carousel-content {
+    flex: 1;
+    overflow: hidden;
+    display: flex; /* Add this to make the carousel items stretch to full width */
+  }
+  
+  .carousel-card-container {
+    display: flex;
+    transition: transform 0.3s ease;
+    /* Add flex-grow to allow the items to fill the available space */
+    flex-grow: 1;
+  }
+  
+  .carousel-card {
+    flex: 0 0 calc(20% - 20px);
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media screen and (max-width: 768px) {
+    
+    .carousel-button {
+      display: none;
+    }
+  }
+  
+  .scrollable-container {
+    flex: 1; /* Take up the remaining space */
+    /* Add overflow-y to enable vertical scrolling */
+    overflow-y: auto;
+    /* Enable smooth scrolling on iOS devices */
+    -webkit-overflow-scrolling: touch;
+  }
+  

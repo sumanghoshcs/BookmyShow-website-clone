@@ -1,0 +1,23 @@
+.toprated_container{
+    /* background-color: rgba(43, 49, 72); */
+    margin: 1rem 0rem 1rem 0rem;
+}
+
+.toprated_details{
+    /* color: white; */
+    display: flex;
+    overflow-x: auto;
+    /* margin: 0.5rem 0rem 0.5rem 0rem; */
+    padding: 1rem 0rem 0rem 0rem;
+    scrollbar-width: none;
+}
+
+.toprated_details::-webkit-scrollbar {
+    display: none;
+  }
+
+.toprated_heading{
+    padding: 1rem 0rem 0rem 2rem;
+    display: flex;
+    justify-content: space-between;
+}

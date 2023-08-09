@@ -1,0 +1,34 @@
+.menuContainer{
+    background-color: rgb(31, 37, 51);
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 5rem;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+}
+sup{
+    color: red;
+    font-size: 13px;
+    outline: none;
+}
+@media (max-width: 950px){
+    .menuContainer{
+        background-color: rgb(31, 37, 51);
+    
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5rem 2rem;
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px){
+    .menuContainer{
+        display: none;
+    }
+}

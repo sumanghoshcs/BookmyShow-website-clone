@@ -1,0 +1,24 @@
+.recomm_movie_container{
+   margin: 1rem 0rem 1rem 0rem;
+    padding: 0.7rem 0rem;
+    /* background-color: aqua; */
+}
+.heading{
+    display:flex;
+    justify-content: space-between;
+    padding: 0rem 2rem;
+}
+.seeAll a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.movieCardSection{
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;
+    /* padding: 0.5rem; */
+}
+.movieCardSection::-webkit-scrollbar {
+    display: none;
+  }

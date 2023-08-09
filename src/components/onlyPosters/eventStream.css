@@ -1,0 +1,28 @@
+.StreamPoster_Container{
+    width: 100%;
+    /* padding: 1rem; */
+    display: flex;
+    
+    margin: 1rem 0rem 1rem 0rem;
+    box-sizing: content-box;
+    justify-content: center;
+}
+
+.stream{
+    padding: 1.5rem 1rem 1.5rem 1rem;
+}
+
+@media (max-width: 800px){
+    .stream{
+        padding: 0.7rem 0.5rem 1rem 0.5rem;
+    }
+    .StreamPoster_Container{
+        width: 100%;
+        /* padding: 1rem; */
+        display: flex;
+        
+        margin: 0.5rem 0rem 0.5rem 0rem;
+        box-sizing: content-box;
+        justify-content: center;
+    }
+}

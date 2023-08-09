@@ -1,0 +1,109 @@
+.movie_poster_and_details{
+    margin: 0;
+    padding: 0;
+}
+.movie_poster_and_details{
+    /* background-color: aqua; */
+    display: flex;
+    padding: 1rem;
+    flex-wrap: wrap;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.i{
+    width:  40%;
+    /* height: 20rem; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.details_space{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: white;
+    padding-left: 2rem;
+    font-weight: bolder;
+}
+.imageSpace{
+    width: 50%;
+ }
+.wishlistbtn{
+    font-weight: bolder;
+    background-color: rgb(255, 14, 94);
+    outline: none;
+    border: none;
+}
+
+.btn-danger{
+    
+    font-weight: bolder;
+}
+
+@media (max-width:800px){
+    .imageSpace{
+        width: 70%;
+        padding-right: 1rem;
+     }
+}
+
+@media (max-width:550px){
+    .i{
+            width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 50%;
+    }
+    .imageSpace{
+        width: 18rem;
+        margin-bottom: 2rem;
+     }
+     .space{
+        padding-top: 0.5rem;
+     }
+}
+
+.aboutMovie{
+    padding: 1.5rem 0rem 1rem 2rem;
+    font-weight: bold;
+}
+
+.offers{
+    padding: 2rem 2rem 1rem 2rem;
+}
+
+.offerImage{
+    width: 50%;
+    /* height: 12rem; */
+    /* padding: 3rem 3rem 3rem 3rem; */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
+}
+.cast{
+    padding: 1.5rem 0rem 1rem 2rem;
+}
+
+.extraRecommendation{
+    padding: 2rem;
+}
+.castImageDiv{
+    width: 8rem;
+    height: 8rem;
+    background-color: aqua;
+    border-radius: 50%;
+}
+.extraRecommendationMovieCards{
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.extraRecommendationMovieCards::-webkit-scrollbar {
+    display: none;
+  }
+  .btn-danger{
+    width: 11rem;
+    height: 2.5rem;
+    font-size: larger;
+  }

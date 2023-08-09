@@ -1,0 +1,83 @@
+.middle-banner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 120px;
+    margin-right: 100px;
+    overflow: hidden;
+  }
+  
+  .middle-banner-container {
+    display: flex;
+    overflow-x: hidden; /* Enable horizontal scrolling */
+    overflow-y: hidden; /* Disable vertical scrolling */
+    gap: 50px;
+  }
+  
+  .middle-banner-container img {
+    width: 80%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .banner-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .banner-buttons button {
+    background-color: grey;
+    border: none;
+    color: #ffff;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  /* Optional: Add transition for smooth scrolling */
+  .middle-banner-container {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .heading {
+    margin-left: 9rem;
+    margin-top: 20px;
+    font-size: 30px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .middle-banner{
+      margin-left: 0px;
+      margin-right:0px;
+    }
+    .middle-banner-container{
+      overflow-x: auto;
+      width: 100%;
+      
+    }
+    .middle-banner-container img {
+      width: 50%;
+      height: 120px;
+  
+    }
+  
+    .banner-buttons {
+      display: none;
+    }
+  }
+  
+  .scrollable-container {
+    flex: 1; /* Take up the remaining space */
+    /* Add overflow-y to enable vertical scrolling */
+    overflow-y: auto;
+    /* Enable smooth scrolling on iOS devices */
+    -webkit-overflow-scrolling: touch;
+  }
+  
