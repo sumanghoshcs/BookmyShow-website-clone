@@ -1,61 +1,91 @@
-/* Crouse.css */
-.carousel-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1750px;
-    margin: 0 auto;
-    padding: 20px;
+.middlebanner-container {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+}
+
+.banner-image {
+  width: 100%;
+  height: 250px;
+  display: block;
+}
+
+.middle-banner-container-crousel {
+  display: flex;
+  overflow-x: hidden; /* Enable horizontal scrolling */
+  overflow-y: hidden; /* Disable vertical scrolling */
+}
+
+.banner-buttons {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.prev {
+  border: none;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+.next {
+  border: none;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.banner-buttons button:first-child {
+  margin-right: 10px;
+}
+
+.banner-buttons button:last-child {
+  margin-left: 10px;
+}
+.carousel-card-container {
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .banner-buttons {
+    display: none;
   }
-  
-  .carousel-button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
+
+  .middle-banner-container-crousel {
+    overflow-x: auto;
+    width: 100%;
   }
-  
-  .prev-button {
-    border-radius: 5px 0 0 5px;
+  .middle-banner {
+    margin-left: 0px;
+    margin-right: 0px;
   }
-  
-  .next-button {
-    border-radius: 0 5px 5px 0;
-    /* Remove the margin to make the "Next" button visible on both sides */
+  .middle-banner-container {
+    overflow-x: auto;
+    width: 100%;
   }
-  
-  .carousel-content {
-    flex: 1;
-    overflow: hidden;
-    display: flex; /* Add this to make the carousel items stretch to full width */
+  .middle-banner-container img {
+    width: 50%;
+    height: 120px;
   }
-  
-  .carousel-card-container {
-    display: flex;
-    transition: transform 0.3s ease;
-    /* Add flex-grow to allow the items to fill the available space */
-    flex-grow: 1;
-  }
-  
-  .carousel-card {
-    flex: 0 0 calc(20% - 20px);
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  @media screen and (max-width: 768px) {
-    
-    .carousel-button {
-      display: none;
-    }
-  }
-  
-  .scrollable-container {
-    flex: 1; /* Take up the remaining space */
-    /* Add overflow-y to enable vertical scrolling */
-    overflow-y: auto;
-    /* Enable smooth scrolling on iOS devices */
-    -webkit-overflow-scrolling: touch;
-  }
-  
+}
+
+.scrollable-container {
+  flex: 1; /* Take up the remaining space */
+  /* Add overflow-y to enable vertical scrolling */
+  overflow-y: auto;
+  /* Enable smooth scrolling on iOS devices */
+  -webkit-overflow-scrolling: touch;
+}
